@@ -13,14 +13,24 @@ MEAN is a set of Open Source components that together, provide an end-to-end fra
 * node.js - [Download page](https://nodejs.org/en/download/) .  
 * npm - comes with node or download yarn - [Download page](https://yarnpkg.com/lang/en/docs/install) .  
 * mongodb - [Download page](https://www.mongodb.com/download-center/community) .  
-
+### Preparation
+* Modify the .env file with your mongodb credentials to authenticate with the server.
+```
+MONGO_USER=username
+MONGO_PWD=password 
+```
 ### Installation 
 ``` 
-git clone https://github.com/linnovate/mean
+git clone https://github.com/Christian-IT/mean
 cd mean
 cp .env.example .env
 yarn
 yarn start (for development)
+```
+### Test Database Authentication
+* Run the following command to submit a query to the `sample_mflix` database.
+```
+node index.js
 ```
 ### Docker based 
 ``` 
